@@ -8,3 +8,9 @@ $(document).bind("mobileinit", function() {
 	$.mobile.loader.prototype.options.theme = "a";
 	$.mobile.loader.prototype.options.html = "";
 });
+
+$(document).on('pageinit', '#splash', function() {
+	setTimeout(function() {
+		$.mobile.changePage("#menu", "slideup");
+	}, 4000);
+});
